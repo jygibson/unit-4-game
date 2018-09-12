@@ -16,19 +16,18 @@ var count = 0;
 function displayDiamondImages (){
     for (var i = 0; i < diamonds.length; i++){
         var randomValue = Math.floor(Math.random() * 12);
-        $("#alldiamonds").append("<img src='" + diamonds[i] + "'data-diamond-value'" + randomValue + "'width='200px'>");
+        $("#alldiamonds").append('<img class="diamond" src="' + diamonds[i] + '" data-diamond-value="'+ randomValue +'" width="200px">');
     }
 };
 displayDiamondImages();
 
 
-$("#alldiamonds").on("click", function () {
-    var diamondValue = ($(this).attr("diamond-value"))
-    diamondValue = parseInt(randomValue);
+$("#alldiamonds").on("click", '.diamond', function() {
+    var diamondValue = parseInt($(this).attr("data-diamond-value"));
     counter += diamondValue;
     alert(counter);
     console.log(counter)
-});
+  });
 
 $("#total").text(counter);
 $("#wins").text(wins);
