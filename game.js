@@ -33,7 +33,9 @@ $(document).ready(function () {
         targetNumber = Math.floor((Math.random() * 101) + 19);
         console.log(targetNumber);
         $("#random-number").text(targetNumber);
-      randomValue = Math.floor(Math.random() * 12) + 1;
+        randomValue = (Math.floor(Math.random() * 12) + 1);
+        counter = 0;
+        $("#total").text("0");
     };
 
     //on click event to handle the click event - creating the diamondValue and adding it to the counter. Fills in the total 
@@ -45,18 +47,16 @@ $(document).ready(function () {
         $("#total").text(counter);
         //conditional statements for scoring
         if (counter == targetNumber) {
-            resetGame();
             alert("you win, girl. get yourself something shiny.");
             wins++;
             $("#wins").text(wins);
-            counter = 0;
+            resetGame();
         }
         else if (counter > targetNumber) {
-            resetGame();
             alert("you lose. earn more money. bye");
             losses++;
             $("#losses").text(losses);
-            counter = 0;
+            resetGame();
         };
     });
 
