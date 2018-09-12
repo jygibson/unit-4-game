@@ -1,32 +1,48 @@
-var targetNumber =Math.floor((Math.random() * 120));
+var targetNumber = Math.floor((Math.random() * 120)+ 1);
 
-  console.log(targetNumber);
+console.log(targetNumber);
 
-  $("#random-number").text(targetNumber);
+$("#random-number").text(targetNumber);
 
-  var counter = 0;
+var counter = 0;
+var wins = 0;
+var losses = 0;
+
 
 // var numberOptions = Math.floor((Math.random() * 12));
-var diamonds = ["assets/images/bluediamond.jpg","assets/images/diamond.jpg","assets/images/pinkdiamond.jpg","assets/images/purplediamond.jpg"];
+var diamonds = ["assets/images/bluediamond.jpg", "assets/images/diamond.jpg", "assets/images/pinkdiamond.jpg", "assets/images/purplediamond.jpg"];
 var count = 0;
 
-function displayImage() {
-for (var i=0; i<diamonds.length;i++){
-    $("#alldiamonds").append("<img src=" + diamonds[count] + " width='200px'>");
-    count++;
-    $("img").attr("diamond-value", Math.floor((Math.random() * 12)));
- }};
-  displayImage();
-
-  $("#alldiamonds").on("click", function(){
-var diamondValue = ($(this).attr("diamond-value"))
-diamondValue= parseInt(diamondValue);
-counter += diamondValue;
-alert(counter);
-console.log(counter)
-  });
+function displayDiamondImages (){
+    for (var i = 0; i < diamonds.length; i++){
+        var randomValue = Math.floor(Math.random() * 12);
+        $("#alldiamonds").append("<img src='" + diamonds[i] + "'data-diamond-value'" + randomValue + "'width='200px'>");
+    }
+};
+displayDiamondImages();
 
 
+$("#alldiamonds").on("click", function () {
+    var diamondValue = ($(this).attr("diamond-value"))
+    diamondValue = parseInt(randomValue);
+    counter += diamondValue;
+    alert(counter);
+    console.log(counter)
+});
+
+$("#total").text(counter);
+$("#wins").text(wins);
+$("#losses").text(losses);
+
+if (counter === targetNumber) {
+    alert("you win, girl. get yourself something shiny.");
+    wins++;
+}
+
+else if (counter >= targetNumber) {
+    alert("you lose. earn more money. bye");
+    losses++;
+}
 // for (var p=0; p<numberOptions.length; p++){
 //     var pinkDiamond=$("<img>");
 //     pinkDiamond.addClass("pink-diamond");
