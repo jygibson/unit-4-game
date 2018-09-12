@@ -1,10 +1,69 @@
 body {
-    background-image: url(../images/marilyn.jpg);
-    background-size: cover;
-    color: white;
+    color: hotpink;
+}
+
+.jumbotron-fluid {
+    background-image: url(../images/marilyn2.jpg);
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Petit Formal Script', cursive;
+    border-left: 0px;
+}
+
+h5 {
+    font-family: 'Petit Formal Script', cursive;
+    margin-top: 5px;
+}
+
+h6 {
+    font-family: 'Petit Formal Script', cursive;
+}
+
+.lead {
+    font-family: 'Petit Formal Script', cursive;
+}
+
+.right{
+    font-family: 'Cardo', serif;
+}
+
+#win-score {
+float: left;
+margin-left: 220px;
+}
+
+#loss-score {
+float: left;
+margin-right: 50px;
+margin-left:50px;
 }
 
 img {
-    height: 10%;
-    width: 10%;
+    height: 15%;
+    width: 15%;
+}
+
+.container2 {
+    height:300px;
+    position: fixed;
+    left: 750px;
+    right:20px;
+    top: 80px;
+}
+
+#container {
+    width: 600px;
+    margin-left: 170px;
+    padding-left: 170px;
+}
+
+#alldiamonds{
+    align-content: center;
+    margin-top: 70px;
+    margin-left: 170px;
+    padding-left: 170px;
 }
