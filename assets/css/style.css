@@ -17,6 +17,11 @@ h1 {
 h5 {
     font-family: 'Petit Formal Script', cursive;
     margin-top: 5px;
+    margin-left: 170px;
+}
+
+hr {
+    width: 100%;
 }
 
 h6 {
@@ -38,8 +43,8 @@ margin-left: 220px;
 
 #loss-score {
 float: left;
-margin-right: 50px;
-margin-left:50px;
+margin-right: 40px;
+margin-left:40px;
 }
 
 img {
@@ -63,7 +68,7 @@ img {
 
 #alldiamonds{
     align-content: center;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 170px;
     padding-left: 170px;
 }
