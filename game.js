@@ -20,6 +20,7 @@ $(document).ready(function () {
 
     //function uses the array to place 4 images and assign each a random number
     function displayDiamondImages() {
+        $("#alldiamonds").empty();
         for (var i = 0; i < diamonds.length; i++) {
             var randomValue = Math.floor(Math.random() * 12) + 1;
             $("#alldiamonds").append('<img class="diamond" src="' + diamonds[i] + '" data-diamond-value="' + randomValue + '" width="200px">');
@@ -33,9 +34,9 @@ $(document).ready(function () {
         targetNumber = Math.floor((Math.random() * 101) + 19);
         console.log(targetNumber);
         $("#random-number").text(targetNumber);
-        randomValue = (Math.floor(Math.random() * 12) + 1);
         counter = 0;
         $("#total").text("0");
+        displayDiamondImages();
     };
 
     //on click event to handle the click event - creating the diamondValue and adding it to the counter. Fills in the total 
