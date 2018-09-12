@@ -1,4 +1,10 @@
 body {
-    background-image: url(../images/holly.jpg);
-    background-size: auto;
+    background-image: url(../images/marilyn.jpg);
+    background-size: cover;
+    color: white;
+}
+
+img {
+    height: 10%;
+    width: 10%;
 }

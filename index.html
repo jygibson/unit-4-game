@@ -3,19 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>diamonds.math(random)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
     <div class="container">
         <div id="row">
-            <h2> diamond collector</h2>
+            <h2> diamond dash</h2>
         </div>
         <div id="row">
             <p>you will be given a random number at the beginning of the game. <br> there are four diamonds to choose from.
@@ -25,13 +24,14 @@
                 the random number and diamond values will change.
             </p>
         </div>
-        <div id="random-number"></div>
+        <h2> Diamonds to collect: <span id="random-number"></span></h2>
         <div id="total"></div>
-        <div id="pink-diamond"> <img src="assets/images/pinkdiamond.jpg"> </div>
-        <div id="blue-diamond"> <img src="assets/images/bluediamond.jpg"></div>
-        <div id="diamond"> <img src="assets/images/diamond.jpg"></div>
-        <div id="purple-diamond"> <img src="assets/images/purplediamond.jpg"></div>
+        <div id="wins"></div>
+        <div id="losses"></div>
+        <div id="alldiamonds"></div>
+
     </div>
+    <script src="game.js"></script>
 </body>
 
 </html>
