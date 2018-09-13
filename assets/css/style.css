@@ -16,6 +16,7 @@ h1 {
 
 h5 {
     font-family: 'Petit Formal Script', cursive;
+    font-size: 24px;
     margin-top: 5px;
     margin-left: 170px;
 }
@@ -26,6 +27,7 @@ hr {
 
 h6 {
     font-family: 'Petit Formal Script', cursive;
+    font-size: 20px;
 }
 
 .lead {
@@ -58,16 +60,17 @@ img {
     left: 750px;
     right:20px;
     top: 80px;
+    color: lightpink;
+    font-style: italic;
 }
 
 #container {
-    width: 600px;
+    width: 750px;
     margin-left: 170px;
     padding-left: 170px;
 }
 
 #alldiamonds{
-    align-content: center;
     margin-top: 60px;
     margin-left: 170px;
     padding-left: 170px;
