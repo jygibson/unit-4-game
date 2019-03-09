@@ -18,4 +18,3 @@ Fifth, link to my portfolio site
 
 Sixth: perfecting the css
 
-Seventh, #nailedit. Will go back and try to finish the beginning of the hangman game, start the next trivia assignment, and study more
